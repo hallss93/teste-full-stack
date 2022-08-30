@@ -1,0 +1,19 @@
+<div>
+  <v-app-bar fixed color="deep-purple lighten-5" prominent height="55">
+  </v-app-bar>
+  <v-navigation-drawer v-model="drawer" bottom fixed>
+    <p class="ma-0 py-3 text-center deep-purple lighten-3 white--text">
+      Módulo de Acessos
+    </p>
+    <v-list nav dense>
+      <v-list-item-group
+        v-model="group"
+        active-class="deep-purple--text text--accent-4"
+      >
+        <v-list-item link :to="{ path: '/' }">
+          <v-list-item-title>Usuários</v-list-item-title>
+        </v-list-item>
+      </v-list-item-group>
+    </v-list>
+  </v-navigation-drawer>
+</div>
